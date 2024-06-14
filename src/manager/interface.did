@@ -8,4 +8,4 @@ type RejectionCode = variant {
   CanisterReject;
 };
 type Result = variant { Ok; Err : record { RejectionCode; text } };
-service : { upgrade_backend : (principal) -> (Result) }
+service : { upgrade_backend : (principal) - > (Result) }
